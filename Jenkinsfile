@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-
+        NER_VERSION = '1.5.0'
     }
 
     stages {
