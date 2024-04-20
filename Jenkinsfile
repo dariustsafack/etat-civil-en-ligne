@@ -25,7 +25,7 @@ pipeline {
                 }
 
                 script {
-                    gv.loadApp()
+                    gv.buildApp()
                 }
             }
         }
