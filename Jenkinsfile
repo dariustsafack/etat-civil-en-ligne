@@ -10,11 +10,17 @@ pipeline {
             steps {
                 echo "building the application..."
             }
+            Nodejs('Node-18.20.1') {
+                sh 'npm install'
+            }
         }
 
         stage("test") {
             steps {
                 echo "testing the application..."
+            }
+            Nodejs('Node-18.20.1') {
+                sh 'npm run test'
             }
         }
 
